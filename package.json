@@ -9,6 +9,7 @@
   "author": "Radu Chiriac",
   "license": "MIT",
   "devDependencies": {
+    "browserify": "^9.0.8",
     "connect-livereload": "^0.5.3",
     "grunt": "^0.4.5",
     "grunt-browserify": "^3.7.0",
@@ -18,6 +19,7 @@
     "handlebars": "^3.0.1",
     "hbsfy": "^2.2.1",
     "jquery": "^2.1.3",
+    "proxyquireify": "^2.0.0",
     "through2": "^0.6.5"
   }
 }
