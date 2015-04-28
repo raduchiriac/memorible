@@ -4,8 +4,6 @@ var $ = require('jquery');
 var taskData = require('./data/taskData');
 var taskRenderer = require('./renderers/taskRenderer');
 
-// SPEAK ABOUT LOADING RULE ./ or ../ instead of `data` being a NPM module
-
 exports.add = function () {
   taskRenderer.renderNew();
 };
