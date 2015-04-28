@@ -1,3 +1,6 @@
-dist/js
-tmp/
-node_modules/
+*.DS_Store
+/css/*
+/vendor/*
+/node_modules/*
+/dist/js
+/tmp/
