@@ -1,6 +1,7 @@
 {
-  "name": "Memorible",
+  "name": "Mémorible",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "zurb/bower-foundation",
+    "switchery": "~0.8.0"
   }
 }

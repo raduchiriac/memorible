@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Task List</title>
-        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <title>Mémorible</title>
+        <link rel="stylesheet" type="text/css" href="css/switchery.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
     </head>
     <body>
-        <header>
-            <p>Look how horrible your memory is:<p>
-        </header>
-        <div class="toolbar">
-            <button id="new-task-button" class="button success small">New Task</button>
-            <button id="delete-all-button" class="button alert small">Delete All</button>
+        <div class="sticky contain-to-grid">
+            <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+              <ul class="title-area">
+                <li class="name">
+                  <h1><a href="#">Mémorible</a></h1>
+                </li>
+                 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+              </ul>
+
+              <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><button id="delete-all-button" class="button alert small">Delete All</button></li>
+                </ul>
+
+                <!-- Left Nav Section -->
+                <ul class="left">
+                  <li class="active"><button id="new-task-button" class="button success small">New Task</button></li>
+                </ul>
+              </section>
+            </nav>
         </div>
+
         <div id="content">
-            <ul id="task-list">
-            </ul>
-            <ul id="log-list">
+            <div id="task-list">
+            </div>
+            <div id="log-list">
+            </div>
+        </div>
+        <div class="toolbar text-center">
+            <ul class="button-group round">
+              <li><button class="button success" id="save-button">Save</button></li>
+              <li><button class="button secondary" id="cancel-button">Cancel</button></li>
             </ul>
         </div>
-        <div class="toolbar">
-            <button id="save-button">Save</button>
-            <button id="cancel-button">Cancel</button>
-        </div>
+
+        <script src="js/switchery.min.js"></script>
         <script src="js/app.bundle.js"></script>
     </body>
 </html>

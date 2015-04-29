@@ -4,7 +4,6 @@ var $ = require('jquery');
 var taskTemplate = require('../../templates/task.hbs');
 
 function _renderTask(theTaskToGenerate) {
-  console.log(theTaskToGenerate);
   return $(taskTemplate(theTaskToGenerate));
 }
 
@@ -18,5 +17,7 @@ exports.renderTasks = function (tasksFromLocalstorage) {
 
 exports.renderNew = function () {
   var $taskList = $("#task-list");
-  $taskList.prepend(_renderTask({}));
+  var theNewTask = $taskList.prepend(_renderTask({}));
+  var elem = document.querySelector('.js-switch');
+  var init = new Switchery(elem);
 };
