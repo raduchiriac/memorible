@@ -2,5 +2,7 @@
 /css/*
 /vendor/*
 /node_modules/*
-/dist/js
+/dist/js/app.bundle.js
+/dist/css/app.css
+/dist/css/app.css.map
 /tmp/
